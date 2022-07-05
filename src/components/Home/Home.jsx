@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import ImageCard from "../ImageCard/ImageCard";
 import { iconSearch } from "../../assets/images";
 import { dummy } from "../../assets/dummy";
@@ -16,7 +16,6 @@ const Home = () => {
       })
     );
   };
-
 
   return (
     <>

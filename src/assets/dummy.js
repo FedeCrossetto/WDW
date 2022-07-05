@@ -1,4 +1,4 @@
-import { bgCard, bgCard2, avatarCard, avatarCard2 } from './images';
+import { bgCard, avatarCard } from './images';
 
 export const dummy = [
   {
@@ -36,41 +36,5 @@ export const dummy = [
     title: 'Sam Jerremy 6',
     hashTag: '#dayAtTheBeach6',
     avatarImg: avatarCard,
-  },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 7',
-  //   hashTag: '#hashtag',
-  //   avatarImg: avatarCard2,
-  // },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 8',
-  //   hashTag: '#weDoWeb',
-  //   avatarImg: avatarCard2,
-  // },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 9',
-  //   hashTag: '#challenge',
-  //   avatarImg: avatarCard2,
-  // },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 10',
-  //   hashTag: '#challengeOther',
-  //   avatarImg: avatarCard2,
-  // },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 11',
-  //   hashTag: '#dayAtTheBeach11',
-  //   avatarImg: avatarCard2,
-  // },
-  // {
-  //   img: bgCard2,
-  //   title: 'Sam Jerremy 12',
-  //   hashTag: '#dayAtTheBeach12',
-  //   avatarImg: avatarCard2,
-  // },
+  }
 ];

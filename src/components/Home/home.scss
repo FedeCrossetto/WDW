@@ -8,13 +8,13 @@
   width: 100%;
   position: relative;
   margin-top: 250px;
+
   @include for-phone {
     position: absolute;
     margin-top: 140px;
-    // margin-left: 20px !important;
-  padding-left: 40px !important;
-  padding-left: 40px !important;
-   justify-content: center;
+    padding-left: 40px !important;
+    padding-left: 40px !important;
+    justify-content: center;
   }
 
   &__input {
@@ -38,10 +38,10 @@
     text-align: right;
     position: relative;
     margin-right: 70px;
+
     @include for-phone {
       align-content: center !important;
       display: inline-block !important;
-      // margin-left: 12px;
     }
   }
 
@@ -108,20 +108,21 @@
     cursor: pointer;
     margin-top: 48px;
     margin-bottom: 48px;
-     margin-right: 42px;
+    margin-right: 42px;
     @include for-phone {
       margin-right: 32px;
       padding-bottom: 100px !important;
     }
   }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      gap: 0;
-      @include for-phone {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-}
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+
+    @include for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

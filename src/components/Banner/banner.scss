@@ -9,20 +9,13 @@
     background: url('../../../src/assets/images/hero-bg.jpg');
     background-repeat: repeat;
     background-size: cover;
-    /*NEW-------------------*/
     @include for-phone {
       height: 120px;
       width: 420px;
       background-size: cover !important;
       background-repeat: repeat !important;
        margin: 0 auto !important;  
-      //  position: fixed; 
-
-      // height:auto;
-
-
     }
-    /*NEW-------------------*/
     &__content {
       position: absolute;
       bottom: 10px;
