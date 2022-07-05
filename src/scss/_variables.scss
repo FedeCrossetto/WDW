@@ -1,0 +1,24 @@
+$primary: #c23f81;
+$secondary: #74667e;
+$gray-one: #ececec;
+$gray-two: #d6d5d673;
+$gray-three: #edeced;
+$gray-fourth:#888888;
+$dark: #313131;
+$white: #fff;
+$black: #000;
+
+$border-radius: 30px;
+
+$mobile-width: 450px; //Medida máxima para los dispositivos mobile.
+$tablet-width: 1024px;//Medida máxima para los dispositivos tablet.
+$max-width-desktop: 1200px !important; //Medida máxima para los dispositivos desktop standart.
+
+$font-family: 'Roboto', cursive;
+
+
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}

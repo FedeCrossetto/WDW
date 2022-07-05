@@ -1,0 +1,54 @@
+@use '../../scss/' as *;
+
+
+.card{
+  width: 360px;
+  height:365px;
+  margin-top: 20px; 
+  border: none !important;
+  background-color: $gray-three !important;
+  border-radius: 12px 12px 12px 12px !important;
+  @include for-phone {
+    width: 320px;
+    height:345px;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4px; 
+  }
+
+  &__image{
+    width:360px;
+    height:360px;
+    padding:0;
+    border-radius: 12px 12px 0px 0px;
+    @include for-phone {
+    width: 320px;
+    height:345px;
+  }
+  }
+  &__title{    
+    position: relative;
+    color: $dark;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    font-family: $font-family;
+    margin-left: 52px;
+  }
+  &__subtitle{
+    position: relative;
+    color: $dark;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font-family;
+    margin-left: 52px;
+  }
+  &__avatar{
+    position: absolute;
+    box-sizing: 100px;
+    border-radius: 50px;
+  }
+}

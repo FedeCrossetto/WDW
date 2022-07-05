@@ -1,0 +1,59 @@
+@use '../../scss/'as *;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+
+.header {
+  width: 100%;
+  height: 68px;
+  z-index: 1;
+  background-color: $white;
+
+  &__inner {
+    @include flex(center, space-between);
+    height: 100%;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+
+    @include for-phone {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+
+  &__logo {
+    width: 145px;
+    pointer-events: visible;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__hamburguer {
+    display: flex;
+    width: 30px;
+    height: 26px;
+    cursor: pointer;
+    display: none !important;
+
+    @include for-phone {
+      display: block !important;
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .btn-custom {
+    background-color: $primary;
+    margin-right: 40px;
+    color: #FFF;
+    font-weight: 400;
+    border-radius: 8px;
+
+    @include for-phone {
+      display: none !important;
+    }
+  }
+}
