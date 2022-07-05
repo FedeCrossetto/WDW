@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import ImageCard from "../ImageCard/ImageCard";
-import Footer from "../Footer/Footer";
 import { iconSearch } from "../../assets/images";
 import { dummy } from "../../assets/dummy";
-import { logo2, reserved ,heroBg} from '../../assets/images';
 import "./home.scss";
 
 const Home = () => {
@@ -22,8 +20,7 @@ const Home = () => {
 
   return (
     <>
-      {" "}
-      <div className="container home">
+      <div className=" container home">
         <div>
           <div className="home__search">
             <span className="home__text">Search by #</span>
@@ -35,7 +32,7 @@ const Home = () => {
             <img src={iconSearch} alt="Search Post" className="home__img" />
           </div>
         </div>
-        <div className="container">
+        <div className="">
           <div className="grid row">
             {data.length !== 0 ? (
               data.map((x, index) => (
@@ -53,11 +50,6 @@ const Home = () => {
             )}
           </div>
           {data.length !== 0 && <p className="home__more mt-6">Load More</p>}
-          <div className="home__line"></div>
-            <div className="home__line2">
-              <img src={logo2} className="home__item1" alt="Logo" />
-              <img src={reserved} className="home__item2" alt="Logo" />
-          </div>
         </div>
       </div>
     </>

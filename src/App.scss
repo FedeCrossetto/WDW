@@ -5,15 +5,14 @@
 
 .app{
 
-// &__footer{
-//   background-color: red;
-//   margin-top: 20px;
-//   // position: absolute;
-//   bottom: 0;
-//   @include for-phone{
-//     position: relative !important;
-//     bottom: 0 !important;
-//   }
-// }
+&__footer{
+  @include for-phone{
+
+    bottom  : 0 !important;
+    width: 100%;
+    position: fixed;
+    // display: none;
+  }
+}
 }
 

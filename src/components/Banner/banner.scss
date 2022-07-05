@@ -4,7 +4,7 @@
     background-color: $primary !important;
     height: 208px;
     width: 100%;
-    position: relative;
+    position: absolute;
     pointer-events: none;
     background: url('../../../src/assets/images/hero-bg.jpg');
     background-repeat: repeat;
@@ -12,8 +12,11 @@
     /*NEW-------------------*/
     @include for-phone {
       height: 120px;
-      width: 100%;
-      
+      width: 420px;
+      background-size: cover !important;
+      background-repeat: repeat !important;
+       margin: 0 auto !important;  
+      //  position: fixed; 
 
       // height:auto;
 
@@ -24,7 +27,6 @@
       position: absolute;
       bottom: 10px;
       padding-left: 32px;
-  
       @include for-phone {
         bottom: -30px;
       }

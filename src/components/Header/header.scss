@@ -8,7 +8,6 @@
   height: 68px;
   z-index: 1;
   background-color: $white;
-
   &__inner {
     @include flex(center, space-between);
     height: 100%;
@@ -36,12 +35,13 @@
     height: 26px;
     cursor: pointer;
     display: none !important;
-
     @include for-phone {
       display: block !important;
       position: absolute;
+      margin-right: 10px !important;
       right: 0;
-      margin-right: 20px;
+      margin-top: -25px;
+      // margin-right: -25px ;
     }
   }
 
@@ -51,7 +51,6 @@
     color: #FFF;
     font-weight: 400;
     border-radius: 8px;
-
     @include for-phone {
       display: none !important;
     }
